@@ -48,3 +48,15 @@ Use JavaScript/jQuery/Angular/React or any other framework of your choice to bui
 ## Submission Instructions
 
 Please upload your solution to both questions to git repos and notify us. Include any instructions in a README.md file.
+
+## daffleskmc
+
+Question 1
+
+RobotTest.java - to run using JUnit
+
+Question 2
+
+Files included: index.html, form.html, result.html
+
+Run the first html, the /WEB-INF/index.html.
