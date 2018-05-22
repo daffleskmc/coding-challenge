@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 2</title>
+</head>
+<body>
+
+<SCRIPT LANGUAGE="javascript">
+
+    var queryString = decodeURIComponent(window.location.search);
+    queryString = queryString.substring(1);
+    var getit = new Array();
+    getit=queryString.split("?");
+
+    var queries = getit[1].split("&");
+    for (var i = 0; i < queries.length; i++)
+    {
+        document.write(queries[i] + "<br>");
+    }
+</SCRIPT>
+</body>
+</html>

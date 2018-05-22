@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 2</title>
+</head>
+<body>
+<div style="background-color:lightblue" align="center">
+<FORM NAME="joe" METHOD="LINK" ACTION="result.html">
+    <INPUT TYPE="hidden" NAME="burns">
+    <label>Age: </label></br>
+    <INPUT TYPE="number" NAME="Age" required></br>
+    <label>Gender: </label></br>
+    <select name="gender">
+        <option value=" "> Select </option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <INPUT TYPE="submit" VALUE="SUBMIT">
+</FORM>
+</div>
+<SCRIPT LANGUAGE="javascript">
+
+var locate = window.location
+document.joe.burns.value = locate
+
+var text = document.joe.burns.value
+
+function delineate(str)
+{
+theleft = str.indexOf("=") + 1;
+theright = str.lastIndexOf("&");
+
+return(str.substring(theleft, theright));
+}
+//document.write("First Name is " +delineate(text));
+
+var locate = window.location
+document.joe.burns.value = locate
+var text = document.joe.burns.value
+
+function delineate2(str)
+{
+point = str.lastIndexOf("=");
+return(str.substring(point+1,str.length));
+}
+//document.write("Last Name is " +delineate2(text));
+
+</SCRIPT>
+</body>
+</html>
